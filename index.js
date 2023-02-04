@@ -25,7 +25,7 @@ app.get('/api/token/:token_id', function(req, res) {
     'name': tokenId,
     'animation_url': 'https://homerenovationnation.com/util/downloads.jsp?nft=' + `${tokenId}`,
     'attributes': {
-      'material': person.material
+      'material': '${person.Material}'
     },
     'image': `${HOST}/images/${tokenId}.png`
   }
