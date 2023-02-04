@@ -23,7 +23,7 @@ app.get('/api/token/:token_id', function(req, res) {
   const person = db[tokenId]
   const data = {
     'name': tokenId,
-    'animation_url': 'https://homerenovationnation.com/downloads.jsp?nft=' + `${tokenId}`,
+    'animation_url': 'https://homerenovationnation.com/util/downloads.jsp?nft=' + `${tokenId}`,
     'attributes': {
       'material': person.material
     },
